@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be81e0b3e013d34eb0950899a2e70e4, type: 3}
+  m_Name: QuizQuestion_8
+  m_EditorClassIdentifier: 
+  _text: Which player wears a different-colored jersey and specializes in defensive
+    skills?
+  _answers:
+  - {fileID: 11400000, guid: 724ff681c221d664c9514581a3d45955, type: 2}
+  - {fileID: 11400000, guid: df43eca933778214ab292f1227fc2982, type: 2}
+  - {fileID: 11400000, guid: 1abda383be2fcb84f9504c1e79fb6627, type: 2}
+  _trueAnswer: {fileID: 11400000, guid: df43eca933778214ab292f1227fc2982, type: 2}

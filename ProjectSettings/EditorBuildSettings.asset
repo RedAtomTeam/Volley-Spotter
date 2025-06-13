@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MiniGame/MiniGame.unity
+    guid: 38cbb1ad2b84feb4398e2a77075dcb08
+  - enabled: 1
+    path: Assets/Scenes/Quiz/Quiz.unity
+    guid: 676f2d6b0b69e3b4ea9c59a6ada753bf
+  - enabled: 1
+    path: Assets/Scenes/Smash/Smash.unity
+    guid: d959f1af6386bb245bd24adc3a5e57bc
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 688fc8e0d575e824dabb0f3542719a6c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

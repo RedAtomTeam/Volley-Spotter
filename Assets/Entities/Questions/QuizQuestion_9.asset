@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be81e0b3e013d34eb0950899a2e70e4, type: 3}
+  m_Name: QuizQuestion_9
+  m_EditorClassIdentifier: 
+  _text: How many sets must a team win to secure a standard volleyball match?
+  _answers:
+  - {fileID: 11400000, guid: ac6b5805fafece74da0ec42f1fcf55cf, type: 2}
+  - {fileID: 11400000, guid: b8dece48765964a4f8101421dd0de5fb, type: 2}
+  - {fileID: 11400000, guid: 1fe9a2546a0bf5540b19a060c499eaac, type: 2}
+  _trueAnswer: {fileID: 11400000, guid: b8dece48765964a4f8101421dd0de5fb, type: 2}
