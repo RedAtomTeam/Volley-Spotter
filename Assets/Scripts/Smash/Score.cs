@@ -22,7 +22,7 @@ public class Score : MonoBehaviour
         {
             _texts[i].text = "SCORE:" + _scorePoints;
         }
-        _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Max Score", _scorePoints);
+        _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Best", _scorePoints);
     }
 
     public int ScorePoints
@@ -39,8 +39,8 @@ public class Score : MonoBehaviour
             _texts[i].text = "SCORE:" + _scorePoints;
         }
 
-        PlayerPrefs.SetInt("Max Score", _scorePoints > PlayerPrefs.GetInt("Max Score", _scorePoints) ? _scorePoints : PlayerPrefs.GetInt("Max Score", _scorePoints));
-        _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Max Score", _scorePoints);
+        PlayerPrefs.SetInt("Best", _scorePoints > PlayerPrefs.GetInt("Best", _scorePoints) ? _scorePoints : PlayerPrefs.GetInt("Best", _scorePoints));
+        _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Best", _scorePoints);
     }
 
 }
