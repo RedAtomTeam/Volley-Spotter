@@ -18,6 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Smash/Smash.unity
     guid: d959f1af6386bb245bd24adc3a5e57bc
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: fa93992cae54e3a4180c953ba6b39ded, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: bc09f8017af55914597051da00f5d297, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 688fc8e0d575e824dabb0f3542719a6c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_UseUCBPForAssetBundles: 0

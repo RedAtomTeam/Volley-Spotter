@@ -22,7 +22,7 @@ public class Zone : MonoBehaviour
             Vector2 dirrection = _ball.transform.position - gameObject.transform.position;
             dirrection = dirrection.normalized;
             dirrection.y = dirrection.y * dirrection.y;
-            _ball.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
+            _ball.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
             _ball.GetComponent<Rigidbody2D>().AddForce(dirrection * _forceValue, ForceMode2D.Impulse);
             _score.AddScore();

@@ -22,7 +22,7 @@ public class Ball : MonoBehaviour, IPointerClickHandler
     {
         _audioService.PlayEffect(_hitClip);
 
-        _rb.linearVelocity = Vector3.zero;
+        _rb.velocity = Vector3.zero;
 
         Vector2 dirrection = new Vector2(gameObject.transform.position.x - eventData.position.x, 1 * _force);
 
