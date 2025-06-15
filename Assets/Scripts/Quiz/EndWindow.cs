@@ -22,6 +22,5 @@ public class EndWindow : MonoBehaviour
         endWindow.SetActive(true);
 
         pointsText.text = $"{points}/{maxPoints}";
-
     }
 }

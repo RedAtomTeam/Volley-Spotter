@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using static System.DateTime;
 
 public class Timer : MonoBehaviour
 {
@@ -22,12 +21,7 @@ public class Timer : MonoBehaviour
                     time.Seconds);
             _timeInSeconds -= Time.deltaTime;
             if ( _timeInSeconds <= 0 )
-            {
                 timerEndEvent?.Invoke();
-            }
         }
     }
-
-
-
 }

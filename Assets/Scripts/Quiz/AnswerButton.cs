@@ -37,12 +37,8 @@ public class AnswerButton : MonoBehaviour
     public void SendAnswer()
     {
         if (_quizQuestionsChanger.CheckAnswer(_quizAnswer))
-        {
             _button.image.sprite = _correctAnswerSprite;
-        }
         else
-        {
             _button.image.sprite = _wrongAnswerSprite;
-        }
     }
 }

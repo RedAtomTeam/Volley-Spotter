@@ -5,12 +5,12 @@ using UnityEngine.EventSystems;
 public class Ball : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private float _force;    
-
-
     private Rigidbody2D _rb;
 
-
     public event Action catchBallEvent;
+
+    [SerializeField] private AudioClip _hitClip;
+    private AudioService _audioService;
 
 
     private void Awake()
@@ -20,6 +20,7 @@ public class Ball : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        _audioService.PlayEffect(_hitClip);
 
         _rb.linearVelocity = Vector3.zero;
 

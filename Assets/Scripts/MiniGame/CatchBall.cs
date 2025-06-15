@@ -29,7 +29,6 @@ public class CatchBall : MonoBehaviour
     private bool _coroutineRunning = false;
 
 
-
     private void Awake()
     {
         _timer.timerEndEvent += (() =>
@@ -55,9 +54,7 @@ public class CatchBall : MonoBehaviour
         _ball.catchBallEvent += (() =>
         {
             if (_coroutineRunning)
-            {
                 StopCoroutine("ShowHitCoroutine");
-            }
             StartCoroutine("ShowHitCoroutine");
         });
     }
@@ -81,21 +78,16 @@ public class CatchBall : MonoBehaviour
 
         _textHit.gameObject.SetActive(true);
 
-
         while (true)
         {
             if (_timeForHitTextNow > 0)
             {
                 _timeForHitTextNow -= 0.1f;
-
                 _textHitCanvasGroup.alpha = _timeForHitTextNow / _timeForHitText; 
-
                 yield return new WaitForSeconds(0.1f);
             }
             else
-            {
                 break;
-            }
         }
 
         _textHit.gameObject.SetActive(false);

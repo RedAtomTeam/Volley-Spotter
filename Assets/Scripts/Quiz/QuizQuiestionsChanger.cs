@@ -18,7 +18,6 @@ public class QuizQuiestionsChanger : MonoBehaviour
 
     private int _points = 0;
 
-
     public event Action<int, int> endEvent;
 
 
@@ -38,9 +37,7 @@ public class QuizQuiestionsChanger : MonoBehaviour
     private void LoadAnswers(List<QuizAnswer> answers)
     {
         for (int i = 0; i < answers.Count; i++)
-        {
             _questionAnswerButtons[i].SetButtonState(answers[i]);
-        }
     }
 
     public bool CheckAnswer(QuizAnswer answer)
@@ -63,9 +60,7 @@ public class QuizQuiestionsChanger : MonoBehaviour
     private void Next()
     {
         if (_questionIndex >= _questions.Count)
-        {
             endEvent?.Invoke(_points, _questions.Count);
-        }
         else
         {
             SetCurrentQuestion();

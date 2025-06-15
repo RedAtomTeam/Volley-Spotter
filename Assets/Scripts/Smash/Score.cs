@@ -8,10 +8,11 @@ public class Score : MonoBehaviour
     [SerializeField] private GameObject _playCanvas;
     [SerializeField] private GameObject _endCanvas;
 
-    private int _scorePoints = 0;
-
     [SerializeField] private List<TextMeshProUGUI> _texts = new List<TextMeshProUGUI>();
     [SerializeField] private TextMeshProUGUI _maxScoreText;
+    
+    private int _scorePoints = 0;
+
 
     private void Start()
     {
@@ -19,9 +20,8 @@ public class Score : MonoBehaviour
         _bottomTrigger.triggerEvent += () => { _endCanvas.SetActive(true); };
 
         for (int i = 0; i < _texts.Count; i++)
-        {
             _texts[i].text = "SCORE:" + _scorePoints;
-        }
+
         _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Best", _scorePoints);
     }
 
@@ -35,9 +35,7 @@ public class Score : MonoBehaviour
         _scorePoints++;
 
         for (int i = 0; i < _texts.Count; i++)
-        {
             _texts[i].text = "SCORE:" + _scorePoints;
-        }
 
         PlayerPrefs.SetInt("Best", _scorePoints > PlayerPrefs.GetInt("Best", _scorePoints) ? _scorePoints : PlayerPrefs.GetInt("Best", _scorePoints));
         _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Best", _scorePoints);
