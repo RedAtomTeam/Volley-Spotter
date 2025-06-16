@@ -20,6 +20,8 @@ public class Ball : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (_audioService == null)
+            _audioService = AudioService.Instance;
         _audioService.PlayEffect(_hitClip);
 
         _rb.velocity = Vector3.zero;

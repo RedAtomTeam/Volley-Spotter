@@ -20,7 +20,7 @@ public class Score : MonoBehaviour
         _bottomTrigger.triggerEvent += () => { _endCanvas.SetActive(true); };
 
         for (int i = 0; i < _texts.Count; i++)
-            _texts[i].text = "SCORE:" + _scorePoints;
+            _texts[i].text = "SCORE: " + _scorePoints;
 
         _maxScoreText.text = "BEST:" + PlayerPrefs.GetInt("Best", _scorePoints);
     }
